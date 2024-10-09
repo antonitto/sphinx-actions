@@ -6,7 +6,13 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'sphinx-actions'
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(".."))
+
+
+project = 'printer'
 copyright = '2024, Anton Markov'
 author = 'Anton Markov'
 release = '1.0.0'
@@ -14,7 +20,7 @@ release = '1.0.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_rtd_theme']
+extensions = ['sphinx_rtd_theme', 'sphinx.ext.autodoc']
 
 templates_path = ['_templates']
 exclude_patterns = []

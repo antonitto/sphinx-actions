@@ -3,4 +3,4 @@ Printer
 
 Placeholder text
 
-.. function:: printer.get_printout()
+.. autofunction:: printer.test.get_printout
